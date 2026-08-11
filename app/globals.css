@@ -26,3 +26,13 @@ footer{background:#1f1f1f}
 .studio address{font-style:normal;line-height:1.7;color:var(--muted);margin:18px 0 8px}
 .map-embed{min-height:380px;border:1px solid var(--line);overflow:hidden;background:#f1eef4}
 .map-embed iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:grayscale(.25) contrast(.95)}
+
+/* Final brand hierarchy */
+.brand{color:#1f1f1f;letter-spacing:0;text-transform:none}
+.button,.button-small,.button.pale{background:#4e2183;border-color:#4e2183;color:#fbfbfb}
+.button:hover,.button-small:hover,.button.pale:hover{background:#391761;border-color:#391761;color:#fbfbfb}
+.button.outline{background:#4e2183;border-color:#4e2183;color:#fbfbfb}
+.final-cta{background:#4e2183}
+.final-cta .button,.final-cta .button.pale{background:#fbfbfb;border-color:#fbfbfb;color:#1f1f1f}
+.final-cta .button:hover,.final-cta .button.pale:hover{background:#eee8f4;border-color:#eee8f4;color:#1f1f1f}
+.whatsapp-float{background:#4e2183}

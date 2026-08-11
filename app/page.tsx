@@ -1,8 +1,6 @@
 import Link from "next/link";
 
-const phone = "5491132595475";
-const generalMessage = encodeURIComponent("Hola, necesito asesoramiento por un tema penal. Mi situación es…");
-const whatsapp = (message = generalMessage) => `https://wa.me/${phone}?text=${message}`;
+const whatsapp = (_message?: string) => "https://wa.me/1132595475";
 
 const practices = [
   ["Defensa penal estratégica", "Representación legal con una estrategia diseñada a medida para cada caso, protegiendo tus derechos en cada etapa del proceso."],
@@ -21,7 +19,7 @@ const faqs = [
 
 export function Header() {
   return <header className="site-header"><div className="nav-wrap">
-    <Link className="brand" href="/"><span>JULIETA</span> VITALE</Link>
+    <Link className="brand" href="/">Julieta Vitale</Link>
     <nav aria-label="Navegación principal">
       <Link href="/">Inicio</Link><Link href="/sobre-mi">Sobre mí</Link><Link href="/areas-de-practica">Áreas de práctica</Link><Link href="/contacto">Contacto</Link>
     </nav>
@@ -38,7 +36,7 @@ export function Footer() {
 }
 
 function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
-  const source = variant === "wide" ? "/julieta-about.jpg" : "/julieta-hero.jpg";
+  const source = variant === "wide" ? "/julieta-secundaria.png" : "/julieta-principal.png";
   return <figure className={`julieta-photo ${variant}`}><img src={source} alt={label}/></figure>;
 }
 
