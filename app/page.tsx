@@ -28,11 +28,11 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer><div className="footer-grid">
+  return <><footer><div className="footer-grid">
     <div><h3>Julieta Vitale</h3><p>Abogada penalista. Defensa clara, acompañamiento humano y compromiso con cada caso.</p></div>
     <div><h4>Navegación</h4><Link href="/">Inicio</Link><Link href="/sobre-mi">Sobre mí</Link><Link href="/areas-de-practica">Áreas de práctica</Link><Link href="/contacto">Contacto</Link></div>
     <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div>
-  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer>;
+  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href="https://wa.me/1132595475" aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><span aria-hidden="true">◔</span><small>WhatsApp</small></a></>;
 }
 
 function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
@@ -71,5 +71,5 @@ export default function Home() {
 
     <section className="studio section"><div><p className="eyebrow">Atención presencial</p><h2>Mi estudio</h2><p>Visitanos o coordiná una consulta presencial.</p><address>Ada Elflein 668<br/>San Martín, Provincia de Buenos Aires</address><a className="button outline" href="https://maps.app.goo.gl/n3bXYQYkjrCjkj7K7" target="_blank" rel="noreferrer">Abrir en Google Maps</a></div><div className="map-embed"><iframe title="Ubicación del estudio de Julieta Vitale" src="https://www.google.com/maps?q=-34.5405276,-58.5826711&z=16&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/></div></section>
     <section className="final-cta"><p className="eyebrow">Estamos para ayudarte</p><h2>Si estás pasando por una situación legal, podés recibir asesoramiento ahora.</h2><a className="button pale" href={whatsapp()} target="_blank" rel="noreferrer">Contactar ahora por WhatsApp →</a></section>
-  </main><Footer/><a className="whatsapp-float" href={whatsapp()} aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer">WA</a></>;
+  </main><Footer/></>;
 }

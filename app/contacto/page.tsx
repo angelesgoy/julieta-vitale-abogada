@@ -1,2 +1,26 @@
 import { Footer, Header } from "../page";
-export default function Contact(){return <><Header/><main><section className="inner-hero"><p className="eyebrow">Contacto</p><h1>Hablemos de tu situación</h1><p>Podés recibir una orientación clara y confidencial. Para urgencias penales, escribinos por WhatsApp.</p></section><section className="contact-grid"><div><p className="eyebrow">Consulta directa</p><h2>Estamos para ayudarte</h2><p>Contanos brevemente qué sucedió. Evaluaremos tu situación y te indicaremos cómo avanzar.</p><p><strong>Atención de urgencias penales las 24 horas.</strong></p></div><div className="contact-card"><h3>Julieta Vitale</h3><p>Abogada Penalista</p><a href="https://wa.me/1132595475">WhatsApp: 11 3259-5475</a><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a><p>Buenos Aires, Argentina</p><a className="button pale" href="https://wa.me/1132595475">Contactar ahora →</a></div></section></main><Footer/></>}
+
+const whatsapp = "https://wa.me/1132595475";
+
+export default function Contact() {
+  return <><Header/><main className="contact-page">
+    <section className="contact-hero">
+      <p className="eyebrow">Contacto</p>
+      <h1>Hablemos de tu situación</h1>
+      <p>Si necesitás asesoramiento penal —para vos o un familiar— no dudes en escribirme. La consulta es confidencial.</p>
+      <strong>Atención de urgencias penales las 24 horas.</strong>
+      <a className="button whatsapp-button" href={whatsapp} target="_blank" rel="noreferrer"><span className="button-icon" aria-hidden="true">◔</span><span>Contactar por WhatsApp<small>Respuesta rápida y confidencial</small></span><b aria-hidden="true">→</b></a>
+      <div className="contact-facts">
+        <article><span aria-hidden="true">✉</span><div><h3>Email</h3><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div></article>
+        <article><span aria-hidden="true">⌖</span><div><h3>Ubicación</h3><p>San Martín, Provincia de Buenos Aires</p></div></article>
+        <article><span aria-hidden="true">◷</span><div><h3>Disponibilidad</h3><p>Urgencias las 24 horas</p></div></article>
+      </div>
+    </section>
+
+    <section className="contact-studio">
+      <div className="section-heading"><p className="eyebrow">Atención presencial</p><h2>Mi estudio</h2><p>Visitanos o coordiná una consulta presencial.</p><address>Ada Elflein 668, San Martín, Provincia de Buenos Aires</address></div>
+      <div className="map-embed"><iframe title="Ubicación del estudio de Julieta Vitale" src="https://www.google.com/maps?q=-34.5405276,-58.5826711&z=16&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/></div>
+      <div className="center"><a className="button map-button" href="https://maps.app.goo.gl/n3bXYQYkjrCjkj7K7" target="_blank" rel="noreferrer"><span aria-hidden="true">⌖</span> Abrir en Google Maps</a></div>
+    </section>
+  </main><Footer/></>;
+}
