@@ -89,3 +89,20 @@ footer{background:#1f1f1f}
   .contact-hero{padding:75px 20px 70px}.whatsapp-button{min-width:0;width:100%;max-width:390px}.contact-facts{grid-template-columns:1fr;margin-top:40px}.contact-facts article{padding:20px}.contact-studio{padding:70px 20px 85px}.contact-studio .map-embed,.contact-studio .map-embed iframe{height:340px;min-height:340px}
   .whatsapp-float{right:14px;bottom:14px;width:54px;height:54px;padding:0;border-radius:50%}.whatsapp-float small{display:none}
 }
+
+/* WhatsApp identity and refined About layout */
+.button[href*="wa.me"]{border-radius:999px;padding-left:20px;padding-right:24px}
+.button[href*="wa.me"]::before{content:"";width:21px;height:21px;flex:0 0 21px;background:url('/whatsapp-icon.png') center/contain no-repeat}
+.final-cta .button[href*="wa.me"]::before{width:30px;height:30px;flex-basis:30px;border-radius:50%;background-color:#4e2183;background-size:17px}
+.whatsapp-button{border-radius:999px;padding:12px 20px;gap:13px}
+.whatsapp-button::before{width:30px!important;height:30px!important;flex-basis:30px!important}
+.whatsapp-float img{width:25px;height:25px;object-fit:contain;display:block}
+.story-columns{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:85px}
+.story-columns .story-block{margin:0;padding-right:55px}
+.story-columns .story-block+ .story-block{padding:0 0 0 55px;border-left:1px solid var(--line)}
+.story-columns .story-block h2{font-size:clamp(2rem,3.2vw,3rem)}
+
+@media(max-width:800px){
+  .story-columns{grid-template-columns:1fr;gap:50px;margin-bottom:60px}.story-columns .story-block{padding:0}.story-columns .story-block+ .story-block{padding:45px 0 0;border-left:0;border-top:1px solid var(--line)}
+  .button[href*="wa.me"]{padding-left:18px;padding-right:20px}
+}

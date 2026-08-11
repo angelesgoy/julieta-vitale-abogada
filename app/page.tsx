@@ -32,7 +32,7 @@ export function Footer() {
     <div><h3>Julieta Vitale</h3><p>Abogada penalista. Defensa clara, acompañamiento humano y compromiso con cada caso.</p></div>
     <div><h4>Navegación</h4><Link href="/">Inicio</Link><Link href="/sobre-mi">Sobre mí</Link><Link href="/areas-de-practica">Áreas de práctica</Link><Link href="/contacto">Contacto</Link></div>
     <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div>
-  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href="https://wa.me/1132595475" aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><span aria-hidden="true">◔</span><small>WhatsApp</small></a></>;
+  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href="https://wa.me/1132595475" aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><img src="/whatsapp-icon.png" alt=""/><small>WhatsApp</small></a></>;
 }
 
 function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
