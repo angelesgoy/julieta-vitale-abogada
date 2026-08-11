@@ -37,8 +37,9 @@ export function Footer() {
   </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer>;
 }
 
-function PhotoPlaceholder({ variant = "portrait", label = "Fotografía de Julieta Vitale" }) {
-  return <div className={`photo-placeholder ${variant}`} role="img" aria-label={`${label} — imagen provisoria`}><div className="photo-mark">JV</div><span>Imagen provisoria</span></div>;
+function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
+  const source = variant === "wide" ? "/julieta-about.jpg" : "/julieta-hero.jpg";
+  return <figure className={`julieta-photo ${variant}`}><img src={source} alt={label}/></figure>;
 }
 
 export default function Home() {
@@ -49,7 +50,7 @@ export default function Home() {
       <p className="lead">Si estás atravesando una situación legal o un familiar necesita ayuda, podés recibir asesoramiento claro, rápido y profesional.</p>
       <p className="availability"><span/>Atención de urgencias penales las 24 horas.</p>
       <a className="button" href={whatsapp()} target="_blank" rel="noreferrer">Contactar por WhatsApp <b>→</b></a>
-    </div><div className="hero-photo"><PhotoPlaceholder/></div></section>
+    </div><div className="hero-photo"><JulietaPhoto label="Julieta Vitale, abogada penalista"/></div></section>
 
     <section className="urgent section"><div className="section-heading light"><p className="eyebrow">Respuesta inmediata</p><h2>¿Necesitás ayuda urgente?</h2><p>Elegí tu situación y contactanos de inmediato.</p></div>
       <div className="urgent-grid">
@@ -62,7 +63,7 @@ export default function Home() {
       <div className="center"><Link className="text-link" href="/areas-de-practica">Ver todas las áreas →</Link></div>
     </section>
 
-    <section className="about section"><PhotoPlaceholder variant="wide"/><div><p className="eyebrow">Compromiso y cercanía</p><h2>Sobre Julieta Vitale</h2><p>Mi forma de ejercer la defensa penal combina estrategia jurídica con un enfoque humano. Trabajo con empatía y transparencia, priorizando que cada persona comprenda su situación y pueda participar en las decisiones sobre su caso.</p><p>No se trata solo de intervenir técnicamente, sino de acompañar y sostener en momentos de alta vulnerabilidad.</p><Link className="text-link" href="/sobre-mi">Conocer más →</Link></div></section>
+    <section className="about section"><JulietaPhoto variant="wide" label="Julieta Vitale en su estudio"/><div><p className="eyebrow">Compromiso y cercanía</p><h2>Sobre Julieta Vitale</h2><p>Mi forma de ejercer la defensa penal combina estrategia jurídica con un enfoque humano. Trabajo con empatía y transparencia, priorizando que cada persona comprenda su situación y pueda participar en las decisiones sobre su caso.</p><p>No se trata solo de intervenir técnicamente, sino de acompañar y sostener en momentos de alta vulnerabilidad.</p><Link className="text-link" href="/sobre-mi">Conocer más →</Link></div></section>
 
     <section className="process section"><div className="section-heading"><p className="eyebrow">Paso a paso</p><h2>¿Cómo trabajamos?</h2><p>Un proceso simple, claro y pensado para vos.</p></div><div className="steps">
       {[['01','Contacto por WhatsApp','Escribinos contando brevemente tu situación. Respondemos rápido, incluso fuera de horario.'],['02','Evaluación de la situación','Analizamos los detalles de tu caso para entender la mejor forma de ayudarte.'],['03','Estrategia legal personalizada','Diseñamos un plan de defensa a medida y te explicamos cada paso con claridad.']].map(([n,t,x])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{x}</p></article>)}
