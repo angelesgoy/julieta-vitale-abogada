@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const whatsapp = (_message?: string) => "https://wa.me/1132595475";
 
 const practices = [
@@ -19,9 +17,9 @@ const faqs = [
 
 export function Header() {
   return <header className="site-header"><div className="nav-wrap">
-    <Link className="brand" href="/">Julieta Vitale</Link>
+    <a className="brand" href="/">Julieta Vitale</a>
     <nav aria-label="Navegación principal">
-      <Link href="/">Inicio</Link><Link href="/sobre-mi">Sobre mí</Link><Link href="/areas-de-practica">Áreas de práctica</Link><Link href="/contacto">Contacto</Link>
+      <a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a>
     </nav>
     <a className="button button-small" href={whatsapp()} target="_blank" rel="noreferrer">Consultar</a>
   </div></header>;
@@ -30,7 +28,7 @@ export function Header() {
 export function Footer() {
   return <><footer><div className="footer-grid">
     <div><h3>Julieta Vitale</h3><p>Abogada penalista. Defensa clara, acompañamiento humano y compromiso con cada caso.</p></div>
-    <div><h4>Navegación</h4><Link href="/">Inicio</Link><Link href="/sobre-mi">Sobre mí</Link><Link href="/areas-de-practica">Áreas de práctica</Link><Link href="/contacto">Contacto</Link></div>
+    <div><h4>Navegación</h4><a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a></div>
     <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div>
   </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href="https://wa.me/1132595475" aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><img src="/whatsapp-icon.png" alt=""/><small>WhatsApp</small></a></>;
 }
@@ -58,10 +56,10 @@ export default function Home() {
 
     <section className="section practices"><div className="section-heading"><p className="eyebrow">Asesoramiento especializado</p><h2>Áreas de práctica</h2><p>Especialización en derecho penal con enfoque humano y estratégico.</p></div>
       <div className="practice-grid">{practices.map(([title,text],i)=><article key={title}><div className="practice-number">0{i+1}</div><h3>{title}</h3><p>{text}</p><a href={whatsapp(encodeURIComponent(`Hola, necesito asesoramiento sobre ${title.toLowerCase()}.`))} target="_blank" rel="noreferrer">Consultar por WhatsApp →</a></article>)}</div>
-      <div className="center"><Link className="text-link" href="/areas-de-practica">Ver todas las áreas →</Link></div>
+      <div className="center"><a className="text-link" href="/areas-de-practica">Ver todas las áreas →</a></div>
     </section>
 
-    <section className="about section"><JulietaPhoto variant="wide" label="Julieta Vitale en su estudio"/><div><p className="eyebrow">Compromiso y cercanía</p><h2>Sobre Julieta Vitale</h2><p>Mi forma de ejercer la defensa penal combina estrategia jurídica con un enfoque humano. Trabajo con empatía y transparencia, priorizando que cada persona comprenda su situación y pueda participar en las decisiones sobre su caso.</p><p>No se trata solo de intervenir técnicamente, sino de acompañar y sostener en momentos de alta vulnerabilidad.</p><Link className="text-link" href="/sobre-mi">Conocer más →</Link></div></section>
+    <section className="about section"><JulietaPhoto variant="wide" label="Julieta Vitale en su estudio"/><div><p className="eyebrow">Compromiso y cercanía</p><h2>Sobre Julieta Vitale</h2><p>Mi forma de ejercer la defensa penal combina estrategia jurídica con un enfoque humano. Trabajo con empatía y transparencia, priorizando que cada persona comprenda su situación y pueda participar en las decisiones sobre su caso.</p><p>No se trata solo de intervenir técnicamente, sino de acompañar y sostener en momentos de alta vulnerabilidad.</p><a className="text-link" href="/sobre-mi">Conocer más →</a></div></section>
 
     <section className="process section"><div className="section-heading"><p className="eyebrow">Paso a paso</p><h2>¿Cómo trabajamos?</h2><p>Un proceso simple, claro y pensado para vos.</p></div><div className="steps">
       {[['01','Contacto por WhatsApp','Escribinos contando brevemente tu situación. Respondemos rápido, incluso fuera de horario.'],['02','Evaluación de la situación','Analizamos los detalles de tu caso para entender la mejor forma de ayudarte.'],['03','Estrategia legal personalizada','Diseñamos un plan de defensa a medida y te explicamos cada paso con claridad.']].map(([n,t,x])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{x}</p></article>)}
