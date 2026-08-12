@@ -150,7 +150,10 @@ footer .footer-grid p{margin-bottom:10px}
 /* Mobile navigation */
 .mobile-menu{display:none}
 .mobile-button-label{display:none}
+main h1,main h2,main h3,footer h3,footer h4{text-wrap:balance}
+main p,main address,footer p,footer a{text-wrap:pretty}
 @media(max-width:800px){
+  main p,main address,footer p{hyphens:none;orphans:2;widows:2}
   .mobile-menu{display:block;position:relative;align-self:center;margin-left:auto;border:0;padding:0}
   .mobile-menu summary{width:40px;height:40px;margin:0;padding:0;border:0;border-radius:0;display:grid;place-items:center;cursor:pointer;background:transparent}
   .mobile-menu summary::after{display:none}

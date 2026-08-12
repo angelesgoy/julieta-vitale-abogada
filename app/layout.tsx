@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TypographyGuard from "./typography-guard";
 
 export const metadata: Metadata = {
   title: "Julieta Vitale | Abogada Penalista",
@@ -20,5 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body>{children}</body></html>;
+  return <html lang="es"><body><TypographyGuard/>{children}</body></html>;
 }
