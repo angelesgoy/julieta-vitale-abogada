@@ -130,8 +130,9 @@ footer .footer-grid h3{margin:0 0 14px;line-height:1.2}
 footer .footer-grid h4{margin:2px 0 14px;color:#fbfbfb;line-height:1.25}
 footer .footer-grid p,footer .footer-grid a{line-height:1.6}
 footer .footer-grid p{margin-bottom:10px}
-footer .instagram-link{display:inline-flex;align-items:center;gap:9px;width:max-content;margin-top:8px;color:#fbfbfb;line-height:1.4;transition:color .2s,opacity .2s}
-footer .instagram-link img{display:block;width:19px;height:19px;object-fit:contain}
+footer .instagram-link{display:inline-flex;align-items:center;justify-content:flex-start;gap:9px;width:max-content;margin-top:8px;color:#fbfbfb;line-height:1;transition:color .2s,opacity .2s}
+footer .instagram-link img{display:block;width:19px;height:19px;flex:0 0 19px;object-fit:contain}
+footer .instagram-link span{display:block;line-height:19px}
 footer .instagram-link:hover{color:#d7beef}
 
 /* Mobile home hero: compact copy with Julieta beside it */
