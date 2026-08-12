@@ -39,7 +39,7 @@ export function Footer() {
   return <><footer><div className="footer-grid">
     <div><h3>Julieta Vitale</h3><p>Abogada penalista. Defensa clara, acompañamiento humano y compromiso con cada caso.</p></div>
     <div><h4>Navegación</h4><a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a></div>
-    <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div>
+    <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a><a className="instagram-link" href="https://www.instagram.com/abogada.julivitale/" target="_blank" rel="noreferrer" aria-label="Instagram de Julieta Vitale"><img src="/instagram-icon.png" alt=""/><span>@abogada.julivitale</span></a></div>
   </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href={whatsappBase} aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><img src="/whatsapp-icon.png" alt=""/><small>WhatsApp</small></a></>;
 }
 

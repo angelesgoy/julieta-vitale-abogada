@@ -10,6 +10,7 @@
 .site-header{background:rgba(251,251,251,.94);border-bottom-color:rgba(31,31,31,.1)}
 .availability span{background:#4e2183;box-shadow:0 0 0 5px #eee7f6}
 .section-heading.light>p:last-child{color:#ded2ea}
+.urgent .section-heading .eyebrow{color:#d7beef}
 .urgent-grid span,.urgent-grid small{color:#b997df}
 .julieta-photo{height:100%;min-height:560px;margin:0;position:relative;overflow:hidden;background:#f0edf2}
 .julieta-photo img{width:100%;height:100%;display:block;object-fit:cover}
@@ -129,6 +130,9 @@ footer .footer-grid h3{margin:0 0 14px;line-height:1.2}
 footer .footer-grid h4{margin:2px 0 14px;color:#fbfbfb;line-height:1.25}
 footer .footer-grid p,footer .footer-grid a{line-height:1.6}
 footer .footer-grid p{margin-bottom:10px}
+footer .instagram-link{display:inline-flex;align-items:center;gap:9px;width:max-content;margin-top:8px;color:#fbfbfb;line-height:1.4;transition:color .2s,opacity .2s}
+footer .instagram-link img{display:block;width:19px;height:19px;object-fit:contain}
+footer .instagram-link:hover{color:#d7beef}
 
 /* Mobile home hero: compact copy with Julieta beside it */
 @media(max-width:640px){
@@ -178,4 +182,48 @@ main p,main address,footer p,footer a{text-wrap:pretty}
   .hero-contact-button .mobile-button-label{display:inline}
   .hero-copy .hero-contact-button{min-height:44px;padding:12px 17px!important;font-size:12.5px;gap:8px}
   .hero-copy .hero-contact-button[href*="wa.me"]::before{width:20px;height:20px;flex-basis:20px}
+
+  /* Compact opening and reading rhythm for the About page */
+  .about-intro{padding:44px 20px 46px}
+  .about-intro .eyebrow{margin-bottom:14px}
+  .about-intro h1{max-width:350px;margin:0 auto 16px;font-size:clamp(2rem,9vw,2.35rem);line-height:1.08}
+  .about-intro>p:last-child{max-width:345px;font-size:14px;line-height:1.6}
+  .about-page-photo{height:285px;margin:-14px 16px 0;box-shadow:0 16px 42px rgba(31,31,31,.11)}
+  .about-page-photo img{object-position:center 43%}
+  .about-story{padding:48px 20px 72px}
+  .story-columns{gap:34px;margin-bottom:48px}
+  .story-columns .story-block h2{font-size:2rem;margin-bottom:14px}
+  .story-columns .story-block+ .story-block{padding-top:34px}
+  .story-block p{font-size:14px;line-height:1.65}
+
+  /* Consistent compact vertical rhythm across all mobile sections */
+  .section{padding:58px 20px}
+  .section-heading{margin-bottom:34px}
+  .section-heading .eyebrow{margin-bottom:14px}
+  .section-heading h2{font-size:clamp(2rem,9vw,2.35rem);margin-bottom:14px}
+  .section-heading>p:last-child{font-size:14px;line-height:1.6}
+  .inner-hero:not(.about-intro){padding:48px 20px 50px}
+  .inner-hero:not(.about-intro) .eyebrow{margin-bottom:14px}
+  .inner-hero:not(.about-intro) h1{font-size:clamp(2.05rem,9.5vw,2.45rem);margin-bottom:16px}
+  .inner-hero:not(.about-intro)>p:last-child{font-size:14px;line-height:1.6}
+  .simple-grid{padding:36px 20px 60px;gap:14px}
+  .simple-grid article{padding:28px 22px}
+  .simple-grid article .eyebrow{margin-bottom:14px}
+  .simple-grid article h3{margin:0 0 12px;font-size:21px}
+  .simple-grid article p{font-size:14px;line-height:1.6}
+  .areas-hero{padding-bottom:46px}
+  .areas-grid{padding-top:30px}
+  .contact-hero{padding:48px 20px 54px}
+  .contact-hero .eyebrow{margin-bottom:14px}
+  .contact-hero h1{font-size:clamp(2.1rem,9.5vw,2.5rem);margin-bottom:16px}
+  .contact-hero>p:not(.eyebrow){font-size:14px;line-height:1.6}
+  .contact-hero>strong{margin:14px 0 24px}
+  .contact-facts{margin-top:32px;gap:12px}
+  .contact-studio{padding:54px 20px 66px}
+  .contact-studio .section-heading{margin-bottom:32px}
+  .final-cta{padding:70px 20px}
+  .final-cta h2{font-size:clamp(2rem,9vw,2.35rem);margin-bottom:26px}
+  footer{padding-top:58px}
+  .footer-grid{gap:28px}
+  .copyright{margin-top:38px}
 }
