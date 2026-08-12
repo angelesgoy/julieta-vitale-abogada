@@ -21,6 +21,15 @@ export function Header() {
     <nav aria-label="Navegación principal">
       <a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a>
     </nav>
+    <details className="mobile-menu">
+      <summary aria-label="Abrir menú de navegación"><span className="hamburger-icon" aria-hidden="true"><i/><i/><i/></span></summary>
+      <div className="mobile-menu-panel">
+        <a href="/">Inicio</a>
+        <a href="/sobre-mi">Sobre mí</a>
+        <a href="/areas-de-practica">Áreas de práctica</a>
+        <a href="/contacto">Contacto</a>
+      </div>
+    </details>
     <a className="button button-small" href={whatsapp()} target="_blank" rel="noreferrer">Consultar</a>
   </div></header>;
 }
