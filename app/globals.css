@@ -122,3 +122,10 @@ footer{background:#1f1f1f}
 .button> b{margin-left:1px}
 .whatsapp-button{gap:10px}
 .whatsapp-button b{margin-left:1px}
+
+/* Footer contrast and typographic rhythm */
+footer .footer-grid{align-items:start}
+footer .footer-grid h3{margin:0 0 14px;line-height:1.2}
+footer .footer-grid h4{margin:2px 0 14px;color:#fbfbfb;line-height:1.25}
+footer .footer-grid p,footer .footer-grid a{line-height:1.6}
+footer .footer-grid p{margin-bottom:10px}
