@@ -1,4 +1,5 @@
-const whatsapp = (_message?: string) => "https://wa.me/1132595475";
+const whatsappBase = "https://wa.me/5491132595475";
+const whatsapp = (message?: string) => message ? `${whatsappBase}?text=${message}` : whatsappBase;
 
 const practices = [
   ["Defensa penal estratégica", "Representación legal con una estrategia diseñada a medida para cada caso, protegiendo tus derechos en cada etapa del proceso."],
@@ -17,7 +18,7 @@ const faqs = [
 
 export function Header() {
   return <header className="site-header"><div className="nav-wrap">
-    <a className="brand" href="/">Julieta Vitale</a>
+    <a className="brand" href="/#inicio">Julieta Vitale</a>
     <nav aria-label="Navegación principal">
       <a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a>
     </nav>
@@ -39,7 +40,7 @@ export function Footer() {
     <div><h3>Julieta Vitale</h3><p>Abogada penalista. Defensa clara, acompañamiento humano y compromiso con cada caso.</p></div>
     <div><h4>Navegación</h4><a href="/">Inicio</a><a href="/sobre-mi">Sobre mí</a><a href="/areas-de-practica">Áreas de práctica</a><a href="/contacto">Contacto</a></div>
     <div><h4>Contacto</h4><p>Buenos Aires, Argentina</p><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div>
-  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href="https://wa.me/1132595475" aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><img src="/whatsapp-icon.png" alt=""/><small>WhatsApp</small></a></>;
+  </div><div className="copyright">© 2026 Julieta Vitale. Todos los derechos reservados.</div></footer><a className="whatsapp-float" href={whatsappBase} aria-label="Contactar por WhatsApp" target="_blank" rel="noreferrer"><img src="/whatsapp-icon.png" alt=""/><small>WhatsApp</small></a></>;
 }
 
 function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
@@ -49,12 +50,12 @@ function JulietaPhoto({ variant = "portrait", label = "Julieta Vitale" }) {
 
 export default function Home() {
   return <><Header/><main>
-    <section className="hero"><div className="hero-copy">
+    <section className="hero" id="inicio"><div className="hero-copy">
       <p className="eyebrow">Abogada Penalista</p>
       <h1>Defensa penal estratégica y acompañamiento en momentos difíciles</h1>
       <p className="lead">Si estás atravesando una situación legal o un familiar necesita ayuda, podés recibir asesoramiento claro, rápido y profesional.</p>
       <p className="availability"><span/>Atención de urgencias penales las 24 horas.</p>
-      <a className="button" href={whatsapp()} target="_blank" rel="noreferrer">Contactar por WhatsApp <b>→</b></a>
+      <a className="button hero-contact-button" href={whatsapp()} target="_blank" rel="noreferrer"><span className="desktop-button-label">Contactar por WhatsApp</span><span className="mobile-button-label">Contactar</span><b>→</b></a>
     </div><div className="hero-photo"><JulietaPhoto label="Julieta Vitale, abogada penalista"/></div></section>
 
     <section className="urgent section"><div className="section-heading light"><p className="eyebrow">Respuesta inmediata</p><h2>¿Necesitás ayuda urgente?</h2><p>Elegí tu situación y contactanos de inmediato.</p></div>

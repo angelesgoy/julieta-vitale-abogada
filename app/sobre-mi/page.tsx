@@ -1,6 +1,6 @@
 import { Footer, Header } from "../page";
 
-const whatsapp = "https://wa.me/1132595475";
+const whatsapp = "https://wa.me/5491132595475";
 
 export default function About() {
   return <><Header/><main>
