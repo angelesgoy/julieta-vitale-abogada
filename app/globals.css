@@ -67,7 +67,7 @@ footer{background:#1f1f1f}
 .whatsapp-button span:nth-child(2){display:flex;flex-direction:column;line-height:1.25}
 .whatsapp-button small{font-size:10px;font-weight:400;opacity:.8;margin-top:3px}
 .whatsapp-button b{margin-left:auto;font-size:20px}
-.contact-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:55px;text-align:left}
+.contact-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:55px;text-align:left}
 .contact-facts article{display:flex;gap:16px;padding:25px 22px;border:1px solid var(--line);background:white;min-width:0}
 .contact-facts article>span{color:#4e2183;font-size:19px;flex:0 0 auto}
 .contact-facts h3{font-size:13px;margin:0 0 7px}
@@ -89,6 +89,8 @@ footer{background:#1f1f1f}
   .contact-hero{padding:75px 20px 70px}.whatsapp-button{min-width:0;width:100%;max-width:390px}.contact-facts{grid-template-columns:1fr;margin-top:40px}.contact-facts article{padding:20px}.contact-studio{padding:70px 20px 85px}.contact-studio .map-embed,.contact-studio .map-embed iframe{height:340px;min-height:340px}
   .whatsapp-float{right:14px;bottom:14px;width:54px;height:54px;padding:0;border-radius:50%}.whatsapp-float small{display:none}
 }
+
+@media(min-width:801px) and (max-width:1050px){.contact-facts{grid-template-columns:repeat(2,1fr)}}
 
 /* WhatsApp identity and refined About layout */
 .button[href*="wa.me"]{border-radius:999px;padding-left:20px;padding-right:24px}

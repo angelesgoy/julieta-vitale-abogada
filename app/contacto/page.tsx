@@ -9,11 +9,12 @@ export default function Contact() {
       <h1>Hablemos de tu situación</h1>
       <p>Si necesitás asesoramiento penal —para vos o un familiar— no dudes en escribirme. La consulta es confidencial.</p>
       <strong>Atención de urgencias penales las 24 horas.</strong>
-      <a className="button whatsapp-button" href={whatsapp} target="_blank" rel="noreferrer"><span>Contactar por WhatsApp<small>Respuesta rápida y confidencial</small></span><b aria-hidden="true">→</b></a>
+      <a className="button whatsapp-button" href={whatsapp} target="_blank" rel="noreferrer"><span>Contactar por WhatsApp</span><b aria-hidden="true">→</b></a>
       <div className="contact-facts">
         <article><span aria-hidden="true">✉</span><div><h3>Email</h3><a href="mailto:mairajulietavitale@gmail.com">mairajulietavitale@gmail.com</a></div></article>
         <article><span aria-hidden="true">⌖</span><div><h3>Ubicación</h3><p>San Martín, Provincia de Buenos Aires</p></div></article>
         <article><span aria-hidden="true">◷</span><div><h3>Disponibilidad</h3><p>Urgencias las 24 horas</p></div></article>
+        <article><span aria-hidden="true">✓</span><div><h3>Atención</h3><p>Respuesta rápida y confidencial</p></div></article>
       </div>
     </section>
 
