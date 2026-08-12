@@ -106,3 +106,7 @@ footer{background:#1f1f1f}
   .story-columns{grid-template-columns:1fr;gap:50px;margin-bottom:60px}.story-columns .story-block{padding:0}.story-columns .story-block+ .story-block{padding:45px 0 0;border-left:0;border-top:1px solid var(--line)}
   .button[href*="wa.me"]{padding-left:18px;padding-right:20px}
 }
+
+.areas-hero{padding-bottom:70px}
+.areas-grid{padding-top:48px}
+@media(max-width:800px){.areas-hero{padding-bottom:55px}.areas-grid{padding-top:28px}}
