@@ -161,7 +161,7 @@ main h1,main h2,main h3,footer h3,footer h4{text-wrap:balance}
 main p,main address,footer p,footer a{text-wrap:pretty}
 @media(max-width:800px){
   .about{gap:0}
-  .about-mobile-eyebrow{display:block;margin:0 0 18px}
+  .about-mobile-eyebrow{display:block;margin:0 0 28px}
   .about-desktop-eyebrow{display:none}
   .about .julieta-photo{margin-bottom:42px}
   main p,main address,footer p{hyphens:none;orphans:2;widows:2}
@@ -215,6 +215,7 @@ main p,main address,footer p,footer a{text-wrap:pretty}
   .simple-grid article p{font-size:14px;line-height:1.6}
   .areas-hero{padding-bottom:46px}
   .areas-grid{padding-top:30px}
+  .areas-grid article .text-link,.practice-grid article>a{display:inline-block;margin-top:10px}
   .contact-hero{padding:48px 20px 54px}
   .contact-hero .eyebrow{margin-bottom:14px}
   .contact-hero h1{font-size:clamp(2.1rem,9.5vw,2.5rem);margin-bottom:16px}
