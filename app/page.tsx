@@ -31,7 +31,6 @@ export function Header() {
         <a href="/contacto">Contacto</a>
       </div>
     </details>
-    <a className="button button-small" href={whatsapp()} target="_blank" rel="noreferrer">Consultar</a>
   </div></header>;
 }
 
