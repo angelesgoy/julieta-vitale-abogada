@@ -40,3 +40,4 @@ dev-server.log
 /.wrangler/
 /outputs/
 /work/
+/gh-pages-export/
